@@ -112,7 +112,7 @@ def main():
     tokenizer.padding_side = "left" 
         
     # load test data
-    test_data_file = os.path.join(args.data_path, args.dataset, f'{args.dataset}_{args.tasks}_{args.item_indexing}_test_{args.test_prompt}.json')
+    test_data_file = os.path.join(args.data_path, args.dataset, f'{args.dataset}_{args.tasks}_{args.item_indexing}_validation_{args.test_prompt}.json')
     test_data = load_dataset("json", data_files=test_data_file, field='data')
 
     
